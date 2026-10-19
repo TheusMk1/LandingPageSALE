@@ -1,0 +1,514 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="UniSALESIANO — conhecimento que transforma." />
+
+    <title>UniSALESIANO — Seu futuro começa aqui</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./site/style.css" />
+</head>
+
+<body>
+
+    <!-- BARRA DE PROGRESSO -->
+    <div class="progress">
+        <i></i>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header id="inicio">
+
+        <a class="brand" href="#inicio" aria-label="UniSALESIANO, início">
+            <b>Uni</b>
+            <span>SALESIANO</span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="#institucional">Institucional</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#medicina">Medicina</a>
+            <a href="#experiencia">Vida acadêmica</a>
+            <a href="#campus">Campus</a>
+        </nav>
+
+        <a class="header-cta" href="#inscricoes">
+            Inscreva-se
+            <span>↗</span>
+        </a>
+
+        <button class="menu" aria-label="Abrir menu" aria-expanded="false">
+            <i></i>
+            <i></i>
+        </button>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- SEÇÃO 01: HERO -->
+        <section class="hero" id="institucional">
+
+            <div class="hero-image"></div>
+            <div class="grid"></div>
+
+            <div class="hero-copy">
+
+                <p class="tag">
+                    Centro Universitário Católico Salesiano Auxilium
+                </p>
+
+                <h1>
+                    SEU<br>
+                    <em>FUTURO</em><br>
+                    COMEÇA AQUI.
+                </h1>
+
+                <p>
+                    Conhecimento que transforma. Experiências que inspiram.
+                    Um futuro que você constrói.
+                </p>
+
+                <div class="actions">
+
+                    <a class="button gold" href="#cursos">
+                        Conheça nossos cursos
+                        <span>↓</span>
+                    </a>
+
+                    <a class="plain" href="#experiencia">
+                        Viver o campus
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-note">
+                <span>01 / 06</span>
+
+                <p>
+                    Uma nova perspectiva<br>
+                    para a sua história.
+                </p>
+            </div>
+
+            <a class="scroll" href="#manifesto">
+                <i></i>
+                Explore
+            </a>
+
+        </section>
+
+        <!-- SEÇÃO 02: MANIFESTO -->
+        <section class="manifesto section" id="manifesto">
+
+            <span class="tag">01 — O próximo passo</span>
+
+            <div>
+
+                <h2 class="statement">
+                    Aqui, a formação encontra propósito.
+                    <em>Você encontra possibilidades.</em>
+                </h2>
+
+                <div class="manifesto-foot">
+
+                    <p>
+                        Mais que preparar profissionais, o UniSALESIANO
+                        convida você a ampliar o olhar, construir repertório
+                        e participar de uma comunidade movida pelo conhecimento.
+                    </p>
+
+                    <a class="circle" href="#cursos" aria-label="Explorar cursos">
+                        ↘
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO 03: CURSOS -->
+        <section class="courses section" id="cursos">
+
+            <div class="heading">
+
+                <div>
+
+                    <span class="tag">02 — Graduação</span>
+
+                    <h2>
+                        ESCOLHA O QUE<br>
+                        <em>MOVE VOCÊ.</em>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Explore caminhos para transformar curiosidade em carreira.
+                </p>
+
+            </div>
+
+            <!-- FILTROS E PESQUISA -->
+            <div class="controls">
+
+                <div class="filters">
+                    <button class="active" data-filter="Todos">Todos</button>
+                    <button data-filter="Saúde">Saúde</button>
+                    <button data-filter="Tecnologia">Tecnologia</button>
+                    <button data-filter="Negócios">Negócios</button>
+                    <button data-filter="Humanas">Humanas</button>
+                    <button data-filter="Engenharias">Engenharias</button>
+                </div>
+
+                <label class="search">
+                    ⌕
+                    <input
+                        type="search"
+                        placeholder="Buscar curso"
+                        aria-label="Buscar curso"
+                    />
+                </label>
+
+            </div>
+
+            <!-- CARDS GERADOS PELO JAVASCRIPT -->
+            <div class="course-grid" id="courseGrid"></div>
+
+            <button class="show-all" id="showAll">
+                Ver todos os cursos ↓
+            </button>
+
+        </section>
+
+        <!-- SEÇÃO 04: MEDICINA -->
+        <section class="medicine" id="medicina">
+
+            <div class="medicine-photo"></div>
+
+            <div class="medicine-content">
+
+                <span class="tag">03 — Medicina</span>
+
+                <h2>
+                    CIÊNCIA, CUIDADO<br>
+                    E <em>PROPÓSITO.</em>
+                </h2>
+
+                <p class="lead">
+                    Uma formação para quem deseja transformar conhecimento
+                    em presença, escuta e responsabilidade.
+                </p>
+
+                <p>
+                    A Medicina é uma escolha que começa na curiosidade
+                    sobre a vida e se fortalece a cada encontro humano.
+                    No UniSALESIANO, a sua trajetória pode ser construída
+                    com profundidade, ética e um olhar atento para as pessoas.
+                </p>
+
+                <div class="medicine-points">
+                    <span>Formação humana</span>
+                    <span>Conhecimento científico</span>
+                    <span>Compromisso social</span>
+                </div>
+
+                <a class="button outline" href="#inscricoes">
+                    Quero conhecer Medicina
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <p class="photo-caption"></p>
+
+        </section>
+
+        <!-- SEÇÃO 05: VIDA ACADÊMICA -->
+        <section class="experience" id="experiencia">
+
+            <div class="experience-a"></div>
+            <div class="experience-b"></div>
+
+            <div class="experience-copy">
+
+                <span class="tag">04 — Vida no campus</span>
+
+                <h2>
+                    MAIS QUE UMA<br>
+                    FACULDADE.<br>
+                    <em>UMA EXPERIÊNCIA.</em>
+                </h2>
+
+                <p>
+                    Aprender também é estar perto de ideias diferentes,
+                    de novas amizades e de pessoas que enxergam seu potencial.
+                </p>
+
+                <a class="button outline" href="#campus">
+                    Descubra o campus
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO 06: PRINCÍPIOS -->
+        <section class="principles section">
+
+            <span class="tag">05 — O que fica</span>
+
+            <div class="principle-layout">
+
+                <h2>
+                    UM LUGAR PARA<br>
+                    <em>IR ALÉM.</em>
+                </h2>
+
+                <div class="principle-list">
+
+                    <!-- PRINCÍPIO 01 -->
+                    <article>
+
+                        <b>01</b>
+
+                        <div>
+                            <h3>Conhecimento em movimento</h3>
+
+                            <p>
+                                Uma formação conectada ao presente,
+                                aberta a ideias e construída com profundidade.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <!-- PRINCÍPIO 02 -->
+                    <article>
+
+                        <b>02</b>
+
+                        <div>
+                            <h3>Comunidade que aproxima</h3>
+
+                            <p>
+                                Encontros, trocas e convivência que fazem
+                                a trajetória ganhar sentido.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <!-- PRINCÍPIO 03 -->
+                    <article>
+
+                        <b>03</b>
+
+                        <div>
+                            <h3>Valores que orientam</h3>
+
+                            <p>
+                                Excelência acadêmica com um olhar humano
+                                para os desafios do mundo.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO 07: CAMPUS -->
+        <section class="campus section" id="campus">
+
+            <div class="heading campus-head">
+
+                <div>
+
+                    <span class="tag">06 — Infraestrutura</span>
+
+                    <h2>
+                        O CAMPUS É PARTE<br>
+                        DA <em>JORNADA.</em>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <!-- GALERIA DE FOTOS -->
+            <div class="gallery">
+
+                <figure class="main-photo">
+
+                    <img
+                        src="./imagens/Entrada do Campus UniSALESIANO Tropical.png"
+                        alt="Arquitetura universitária"
+                    />
+
+                    <figcaption>
+                        Espaços para descobrir, criar e conviver.
+                    </figcaption>
+
+                </figure>
+
+                <figure>
+
+                    <img
+                        src="./imagens/ambiente de estudo.jpg"
+                        alt="Ambiente de estudo"
+                    />
+
+                </figure>
+
+                <figure>
+
+                    <img
+                        src="./imagens/aluno colaborando.jpg"
+                        alt="Estudantes colaborando"
+                    />
+
+                </figure>
+
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO 08: INSCRIÇÕES -->
+        <section class="enroll" id="inscricoes">
+
+            <div class="enroll-photo"></div>
+
+            <div class="enroll-content">
+
+                <span class="tag">Inscrições</span>
+
+                <h2>
+                    O PRÓXIMO CAPÍTULO<br>
+                    DA SUA HISTÓRIA<br>
+                    <em>COMEÇA AQUI.</em>
+                </h2>
+
+                <p>
+                    Chegou a hora de dar forma ao futuro que você imagina.
+                </p>
+
+                <a
+                    class="button white"
+                    href="https://unisalesiano.com.br/aracatuba/graduacao/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Quero estudar no UniSALESIANO
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <!-- PARTE SUPERIOR -->
+        <div class="footer-top">
+
+            <a class="brand" href="#inicio">
+                <b>Uni</b>
+                <span>SALESIANO</span>
+            </a>
+
+            <p>
+                Centro Universitário Católico<br>
+                Salesiano Auxilium
+            </p>
+
+            <a href="#inicio">Voltar ao topo ↑</a>
+
+        </div>
+
+        <!-- LINKS DO RODAPÉ -->
+        <div class="footer-links">
+
+            <div>
+                <small>Institucional</small>
+                <a href="#institucional">Sobre nós</a>
+                <a href="#experiencia">Vida acadêmica</a>
+            </div>
+
+            <div>
+                <small>Graduação</small>
+                <a href="#cursos">Cursos</a>
+                <a href="#medicina">Medicina</a>
+            </div>
+
+            <div>
+                <small>Contato</small>
+
+                <a
+                    href="https://www.unisalesiano.edu.br/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Site oficial ↗
+                </a>
+
+                <a href="#inscricoes">Inscrições</a>
+            </div>
+
+        </div>
+
+        <!-- DIREITOS AUTORAIS -->
+        <div class="footer-bottom">
+            <span>© 2026 UniSALESIANO. Layout conceitual.</span>
+            <span>Feito para futuros em movimento.</span>
+        </div>
+
+    </footer>
+
+    <!-- MODAL DE INFORMAÇÕES DOS CURSOS -->
+    <dialog id="modal">
+
+        <button class="close" aria-label="Fechar">
+            ×
+        </button>
+
+        <span class="tag">Graduação</span>
+
+        <h2></h2>
+
+        <p></p>
+
+        <a class="button gold" href="#inscricoes">
+            Quero saber mais
+            <span>→</span>
+        </a>
+
+    </dialog>
+
+    <!-- JAVASCRIPT -->
+    <script src="./site/script.js"></script>
+
+</body>
+</html>
